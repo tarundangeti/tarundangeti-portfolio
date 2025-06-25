@@ -1,0 +1,262 @@
+/* Socials.css (completed) */
+.socials-section {
+  min-height: 100vh;
+  padding: 3rem 0;
+}
+
+.socials-content {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.socials-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.social-platforms h3,
+.contact-form-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.platform-card {
+  background-color: rgba(17, 34, 64, 0.6);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: 0 5px 15px -8px rgba(2, 12, 27, 0.7);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(17, 34, 64, 0.9);
+  box-shadow: 0 10px 20px -8px rgba(2, 12, 27, 0.8);
+}
+
+.platform-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.platform-card:hover .platform-icon {
+  transform: scale(1.1);
+}
+
+.platform-card h4 {
+  color: var(--secondary-color);
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.platform-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.platform-card a {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.platform-card a:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+.contact-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+
+.contact-form {
+  background-color: rgba(17, 34, 64, 0.6);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: rgba(10, 25, 47, 0.7);
+  border: 1px solid rgba(100, 255, 218, 0.3);
+  border-radius: 4px;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 2px rgba(100, 255, 218, 0.1);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+  transform: translateY(-3px);
+}
+
+.success-message {
+  background-color: rgba(17, 34, 64, 0.6);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.success-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.5rem;
+  background-color: rgba(100, 255, 218, 0.1);
+  border-radius: 50%;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+}
+
+.success-message h4 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.success-message p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .platforms-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .platforms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-platforms h3,
+  .contact-form-container h3 {
+    font-size: 1.5rem;
+  }
+}

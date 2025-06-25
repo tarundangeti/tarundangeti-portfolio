@@ -1,0 +1,180 @@
+.resume-section {
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.resume-content {
+  max-width: 900px;
+}
+
+.resume-summary {
+  margin-bottom: 3rem;
+}
+
+.resume-summary h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.resume-summary p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.resume-preview {
+  margin-bottom: 3rem;
+  background-color: rgba(17, 34, 64, 0.6);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.document-preview {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.document-header {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(136, 146, 176, 0.2);
+  margin-bottom: 2rem;
+}
+
+.document-header h3 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.document-header p {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-info p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.document-section {
+  margin-bottom: 2rem;
+}
+
+.document-section h4 {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.skill-columns {
+  display: flex;
+  gap: 2rem;
+}
+
+.skill-columns ul {
+  flex: 1;
+  list-style-type: none;
+}
+
+.skill-columns ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.7rem;
+  color: var(--text-secondary);
+}
+
+.skill-columns ul li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+}
+
+.education-item {
+  margin-bottom: 1.5rem;
+}
+
+.institution {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.degree {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.3rem;
+}
+
+.year {
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+}
+
+.download-section {
+  text-align: center;
+}
+
+.download-section p {
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.download-btn:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px -10px rgba(2, 12, 27, 0.5);
+}
+
+.download-icon {
+  margin-right: 0.7rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .skill-columns {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .download-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

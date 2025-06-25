@@ -1,0 +1,75 @@
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+  padding: 0.8rem 2.5rem;
+  background: rgba(10, 25, 47, 0.65);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  border-radius: 100px;
+  box-shadow:
+    0 0 12px rgba(0, 255, 255, 0.12),
+    inset 0 0 6px rgba(0, 255, 255, 0.05);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  transition: var(--transition);
+}
+
+/* Flex container still relevant for responsiveness */
+.navbar-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Optional logo on the left side */
+.logo {
+  font-family: var(--font-mono);
+  font-size: 1.3rem;
+  color: var(--dark-accent);
+  text-shadow: 0 0 6px var(--dark-accent);
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Capsule button-style nav items */
+.nav-item {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--dark-text);
+  padding: 0.4rem 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav-item:hover {
+  background: rgba(0, 255, 255, 0.08);
+  color: var(--dark-accent);
+  text-shadow: 0 0 5px var(--dark-accent);
+  border: 1px solid var(--dark-accent);
+}
+
+.nav-item.active {
+  color: var(--dark-secondary);
+  font-weight: bold;
+  background: rgba(255, 0, 124, 0.08);
+  border: 1px solid var(--dark-secondary);
+  text-shadow: 0 0 6px var(--dark-secondary);
+}
