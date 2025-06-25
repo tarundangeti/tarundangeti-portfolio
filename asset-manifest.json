@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/tarundangeti-portfolio/static/css/main.b4a75b0e.css",
+    "main.js": "/tarundangeti-portfolio/static/js/main.a5249140.js",
+    "static/js/453.438d9e50.chunk.js": "/tarundangeti-portfolio/static/js/453.438d9e50.chunk.js",
+    "static/media/profile.jpg": "/tarundangeti-portfolio/static/media/profile.d564c7249be4939dc9e9.jpg",
+    "static/media/healthcare.jpg": "/tarundangeti-portfolio/static/media/healthcare.d421d198919b473874d6.jpg",
+    "index.html": "/tarundangeti-portfolio/index.html",
+    "main.b4a75b0e.css.map": "/tarundangeti-portfolio/static/css/main.b4a75b0e.css.map",
+    "main.a5249140.js.map": "/tarundangeti-portfolio/static/js/main.a5249140.js.map",
+    "453.438d9e50.chunk.js.map": "/tarundangeti-portfolio/static/js/453.438d9e50.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4a75b0e.css",
+    "static/js/main.a5249140.js"
+  ]
+}
